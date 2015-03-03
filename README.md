@@ -1,16 +1,10 @@
 # prettify - Code prettifier for Dart 
 Beautify the code snippets in your web page  
-Based on Googles [google-code-prettify]  
+Based on Googles [google-code-prettify][google-code]  
 
 ## Usage
 
-A simple usage example:
-
-    import 'package:prettify/prettify.dart';
-
-    main() {
-      var awesome = new Awesome();
-    }
+The step-by-step guide is on [prettify.mikemitterer.at][usage]
 
 ## Features and bugs
 
@@ -38,4 +32,4 @@ or **star** this repo here on GitHub
 
 [tracker]: https://github.com/MikeMitterer/dart-prettify/issues
 [google-code]: https://code.google.com/p/google-code-prettify/
-[usage]: 
+[usage]: http://prettify.mikemitterer.at/usage/
