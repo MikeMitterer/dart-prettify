@@ -3,10 +3,20 @@ description: Beautify the code snippets in your web page
 version: 0.0.1
 
 author: Mike Mitterer <office@mikemitterer.at>
-homepage: https://github.com/MikeMitterer/dart-prettify
+homepage: http://prettify.mikemitterer.at/
 
 dependencies:
 #  browser: any
 
 dev_dependencies:
   unittest: any
+
+  # for the samples
+  wsk_material: any
+
+  logging: any
+  logging_handlers: any
+  console_log_handler: any
+
+  args: any
+

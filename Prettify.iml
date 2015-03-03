@@ -3,16 +3,15 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/build/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/build/web/images/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/build/web/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/build/web/styles/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/packages/prettify" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/web/images/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/web/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/theme/web/styles/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/packages/prettify" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/images/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/styles/packages" />
       <excludeFolder url="file://$MODULE_DIR$/packages/prettify" />
       <excludeFolder url="file://$MODULE_DIR$/test/packages" />
     </content>

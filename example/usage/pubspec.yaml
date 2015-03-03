@@ -1,4 +1,4 @@
-name: 'theme'
+name: usage
 version: 0.0.1
 description: An absolute bare-bones web app.
 #author: <your name> <email@example.com>
@@ -13,4 +13,9 @@ dependencies:
     path: ../..
 
   wsk_material: any
+
+  logging: any
+  logging_handlers: any
+  console_log_handler: any
+
 
