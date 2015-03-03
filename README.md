@@ -28,8 +28,9 @@ Please file feature requests and bugs at the [issue tracker][tracker].
     governing permissions and limitations under the License.
     
 If this plugin is helpful for you - please [(Circle)](http://gplus.mikemitterer.at/) me  
-or **star** this repo here on GitHub
+or **star** this repo here on [GitHub][github]
 
 [tracker]: https://github.com/MikeMitterer/dart-prettify/issues
 [google-code]: https://code.google.com/p/google-code-prettify/
 [usage]: http://prettify.mikemitterer.at/usage/
+[github]: https://github.com/MikeMitterer/dart-prettify
