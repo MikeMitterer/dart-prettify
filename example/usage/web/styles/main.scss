@@ -37,9 +37,9 @@ body {
     section {
         padding: 24px;
 
-        &:first-child {
-            padding-top: 40px;
-        }
+        //&:first-child {
+        //    padding-top: 40px;
+        //}
     }
 
     h3 ~ h4 {
@@ -71,7 +71,8 @@ body {
     opacity: 1;
     transition: all 0.3s ease-in;
 }
-@media (max-width: 768px ) {
+@media screen and (max-width: $layout-screen-size-threshold) {
+
     .back-to-top {
         left: auto;
         right: -100px;
@@ -80,6 +81,10 @@ body {
         left: auto;
         right: 15px;
         bottom: 15px;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 }
 
