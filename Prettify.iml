@@ -5,18 +5,18 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/packages/prettify" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/images/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/usage/web/styles/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/prettify" />
-      <excludeFolder url="file://$MODULE_DIR$/test/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/build" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/web/images/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/samples/usage/web/styles/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/packages" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="application" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>

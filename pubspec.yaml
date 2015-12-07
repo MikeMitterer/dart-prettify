@@ -9,10 +9,8 @@ dependencies:
 #  browser: any
 
 dev_dependencies:
-  unittest: any
-
-  # for the samples
-  wsk_material: any
+  test: any
+  grinder: any
 
   logging: any
   logging_handlers: any

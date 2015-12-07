@@ -12,10 +12,18 @@ dependencies:
   prettify:
     path: ../..
 
-  wsk_material: any
+  mdl: ^1.0.0
 
-  logging: any
-  logging_handlers: any
-  console_log_handler: any
+  logging: ^0.11.0
+  logging_handlers: ^0.8.0
+  console_log_handler: ^0.1.0
+
+  dart_to_js_script_rewriter: ^0.1.0
+
+  di: ^3.3.0
+
+transformers:
+  - di
+  - dart_to_js_script_rewriter
 
 

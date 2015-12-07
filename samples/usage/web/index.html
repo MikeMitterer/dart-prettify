@@ -11,46 +11,55 @@
     <link id="theme" rel="stylesheet" href="packages/prettify/styles/sons-of-obsidian.css">
     <script type="text/javascript" src="packages/prettify/js/prettify.js"></script>
 
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
 
     <link rel="shortcut icon" href="assets/icons/favicon.ico"/>
     <style>
-        .update-theme .wsk-layout__content {
+        .update-theme .mdl-layout__content {
             display : none;
         }
     </style>
 </head>
 
 <body class="update-theme">
-<div class="wsk-layout wsk-js-layout wsk-layout--fixed-header wsk-layout--overlay-drawer-button">
-    <div class="wsk-layout__header addscrollshadow">
-        <!-- Icon -->
-        <img class="wsk-layout-icon" src="images/app-icon.png"/>
-        <!-- Title -->
-        <span class="wsk-layout-title">Dart code prettifier</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="wsk-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="wsk-navigation">
-            <a class="wsk-navigation__link hide-on-mobile" href="?theme=desert">Desert</a>
-            <a class="wsk-navigation__link hide-on-mobile" href="?theme=doxy">Doxy</a>
-            <a class="wsk-navigation__link hide-on-mobile" href="?theme=light">Light</a>
-            <a class="wsk-navigation__link hide-on-mobile" href="?theme=sons-of-obsidian">Obsidian</a>
-            <a class="wsk-navigation__link hide-on-mobile" href="?theme=sunburst">Sunburst</a>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout__header addscrollshadow">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Dart code prettifier</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=desert">Desert</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=doxy">Doxy</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=light">Light</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=sons-of-obsidian">Obsidian</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=sunburst">Sunburst</a>
+            </nav>
+        </div>
+    </div>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Dart code prettifier</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="?theme=desert">Desert</a>
+            <a class="mdl-navigation__link" href="?theme=doxy">Doxy</a>
+            <a class="mdl-navigation__link" href="?theme=light">Light</a>
+            <a class="mdl-navigation__link" href="?theme=sons-of-obsidian">Obsidian</a>
+            <a class="mdl-navigation__link" href="?theme=sunburst">Sunburst</a>
         </nav>
     </div>
-    <div class="wsk-layout__drawer">
-        <span class="wsk-layout-title">Dart code prettifier</span>
-        <nav class="wsk-navigation">
-            <a class="wsk-navigation__link" href="?theme=desert">Desert</a>
-            <a class="wsk-navigation__link" href="?theme=doxy">Doxy</a>
-            <a class="wsk-navigation__link" href="?theme=light">Light</a>
-            <a class="wsk-navigation__link" href="?theme=sons-of-obsidian">Obsidian</a>
-            <a class="wsk-navigation__link" href="?theme=sunburst">Sunburst</a>
-        </nav>
-    </div>
-    <div class="wsk-layout__content" id="top">
+    <div class="mdl-layout__content" id="top">
 
         <!-- section: steps -->
         <section id="steps">
@@ -284,7 +293,7 @@ void main() {
             </div>
 
             <div class="subnav">
-                <ul class="wsk-list--inline">
+                <ul class="mdl-list--inline">
                     <li>
                         <a href="#bash">Bash</a>
                     </li>
@@ -980,31 +989,31 @@ description: An absolute bare-bones web app.
         <section>
             <a href="http://demo.stanleyhlng.com/prettify-js" target="_blank">Stanley</a> provided me with some samples and I took some of his "howto's" for this page - Thanks!
         </section>
-    <footer class="wsk-mini-footer">
-        <div class="wsk-mini-footer--left-section">
-            <div class="wsk-logo">
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer--left-section">
+            <div class="mdl-logo">
                <strong>Prettify DART</strong>
             </div>
-            <ul class="wsk-mini-footer--link-list">
+            <ul class="mdl-mini-footer--link-list">
                 <li><a href="https://code.google.com/p/google-code-prettify/source/browse/trunk/src" target="_blank">Languages available</a></li>
                 <li><a href="https://code.google.com/p/google-code-prettify/source/browse/trunk/styles/" target="_blank">Original styles</a></li>
             </ul>
         </div>
-        <div class="wsk-mini-footer--right-section">
-            <ul class="wsk-mini-footer--link-list">
+        <div class="mdl-mini-footer--right-section">
+            <ul class="mdl-mini-footer--link-list">
                 <li><a href="http://www.mikemitterer.at">www.MikeMitterer.at</a></li>
             </ul>
 
-            <!--<button class="wsk-mini-footer&#45;&#45;social-btn"></button>-->
-            <!--<button class="wsk-mini-footer&#45;&#45;social-btn"></button>-->
-            <!--<button class="wsk-mini-footer&#45;&#45;social-btn"></button>-->
-            <!--<button class="wsk-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
         </div>
     </footer>
     </div>
 </div>
 <div class="back-to-top">
-    <button id="totop" class="wsk-button wsk-js-button wsk-button--fab wsk-js-ripple-effect wsk-button--colored">
+    <button id="totop" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
         <i class="fa fa-angle-up"></i>
     </button></div>
 </div>
