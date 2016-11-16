@@ -10,9 +10,9 @@ The step-by-step guide is on [prettify.mikemitterer.at][usage]
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-###License###
+### License
 
-    Copyright 2015 Michael Mitterer (office@mikemitterer.at),
+    Copyright 2016 Michael Mitterer (office@mikemitterer.at),
     IT-Consulting and Development Limited, Austrian Branch
 
     Licensed under the Apache License, Version 2.0 (the "License");
