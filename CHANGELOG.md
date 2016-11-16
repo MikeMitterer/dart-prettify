@@ -1,6 +1,11 @@
 # Change Log for prettify
 Beautify the code snippets in your web page
 
+## [v0.2.1](http://github.com/mikemitterer/dart-prettify/compare/v0.2.0...v0.2.1) - 2016-11-16
+
+### Docs
+* Strong-Mode support added [fef252a](https://github.com/mikemitterer/dart-prettify/commit/fef252a08c79dd84ba24c459fa695b27e580b05a)
+
 ## [v0.2.0](http://github.com/mikemitterer/dart-prettify/compare/v0.1.2...v0.2.0) - 2015-12-07
 
 ### Fixes
