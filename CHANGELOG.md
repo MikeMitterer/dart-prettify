@@ -1,6 +1,11 @@
 # Change Log for prettify
 Beautify the code snippets in your web page
 
+## [Unreleased](http://github.com/mikemitterer/dart-prettify/compare/v0.3...HEAD)
+
+### Docs
+* Sample uses latest MDL-Version [02e4bf5](https://github.com/mikemitterer/dart-prettify/commit/02e4bf555367c7ae172416c918696225c438bc25)
+
 ## [v0.2.1](http://github.com/mikemitterer/dart-prettify/compare/v0.2.0...v0.2.1) - 2016-11-16
 
 ### Docs
