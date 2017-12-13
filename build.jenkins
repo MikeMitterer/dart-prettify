@@ -8,6 +8,7 @@ pipeline {
                 timeout(time: 15, unit: 'MINUTES') {
                     ansiColor('xterm') {
                         sh 'pub update'
+                        sh 'pub update samples/usage/'
                         sh 'pub global activate grinder'
                     }
                 }
