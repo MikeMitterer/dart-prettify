@@ -1,0 +1,12 @@
+# template_dir: ../_templates
+# assets_dir: ../_assets
+# watchfolder1: ../../lib/assets/styles/connections
+
+# Turn it off while developing
+autoprefixer: true
+
+# SASS_PATH wird nur durch "sass" unterstützt
+# Usage: sitegen -c
+sasscompiler: sass
+sass_path:
+  - "package:mdl"
