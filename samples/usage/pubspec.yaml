@@ -21,10 +21,9 @@ dependencies:
      ref: v2.2
     # path: /Volumes/Daten/DevLocal/DevDart/MaterialDesignLite
 
-  dart_to_js_script_rewriter: ^0.1.0
+dev_dependencies:
 
-  dice: ^1.7.0
-    # path: /Volumes/Daten/DevLocal/DevDart/dice
+  dart_to_js_script_rewriter: ^0.1.0
 
 transformers:
   - dart_to_js_script_rewriter
