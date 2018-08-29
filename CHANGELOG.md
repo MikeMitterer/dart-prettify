@@ -6,6 +6,9 @@ Beautify the code snippets in your web page
 ### Docs
 * Sample uses latest MDL-Version [02e4bf5](https://github.com/mikemitterer/dart-prettify/commit/02e4bf555367c7ae172416c918696225c438bc25)
 
+### Refactor
+* Preparing for Dart 2. Example is not ready yet [453629f](https://github.com/mikemitterer/dart-prettify/commit/453629ff64921ca7b1dc20c61abae7a30733d125)
+
 ## [v0.2.1](http://github.com/mikemitterer/dart-prettify/compare/v0.2.0...v0.2.1) - 2016-11-16
 
 ### Docs
