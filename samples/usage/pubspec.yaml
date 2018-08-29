@@ -4,11 +4,9 @@ description: An absolute bare-bones web app.
 #author: <your name> <email@example.com>
 #homepage: https://www.example.com
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: ">=2.0.0 <3.0.0"
 
 dependencies:
-  browser: any
-
   prettify:
     path: ../..
 
@@ -22,10 +20,7 @@ dependencies:
     # path: /Volumes/Daten/DevLocal/DevDart/MaterialDesignLite
 
 dev_dependencies:
-
-  dart_to_js_script_rewriter: ^0.1.0
-
-transformers:
-  - dart_to_js_script_rewriter
+  build_runner: ^0.8.0
+  build_web_compilers: ^0.4.0
 
 
