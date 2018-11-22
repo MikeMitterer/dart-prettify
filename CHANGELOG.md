@@ -3,6 +3,9 @@ Beautify the code snippets in your web page
 
 ## [Unreleased](http://github.com/mikemitterer/dart-prettify/compare/v0.3...HEAD)
 
+### Feature
+* Sample works now with Material4Dart [4ef4dc3](https://github.com/mikemitterer/dart-prettify/commit/4ef4dc3f496fcc471217c584a4ac67669a3a2c1f)
+
 ### Docs
 * Sample uses latest MDL-Version [02e4bf5](https://github.com/mikemitterer/dart-prettify/commit/02e4bf555367c7ae172416c918696225c438bc25)
 
