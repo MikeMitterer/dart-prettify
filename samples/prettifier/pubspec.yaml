@@ -1,8 +1,9 @@
 name: usage
 version: 0.0.1
-description: An absolute bare-bones web app.
-#author: <your name> <email@example.com>
-#homepage: https://www.example.com
+description: Sample for Prettyfier
+author: Mike Mitterer <office@mikemitterer.at>
+homepage: https://github.com/MikeMitterer/dart-prettify
+
 environment:
   sdk: ">=2.0.0 <3.0.0"
 
@@ -19,5 +20,6 @@ dependencies:
 dev_dependencies:
   build_runner: any
   build_web_compilers: any
+
   sass_builder: any
 
