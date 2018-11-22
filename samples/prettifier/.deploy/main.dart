@@ -1,24 +1,32 @@
-import 'dart:html' as html;
+library app;
+
+import "dart:html" as dom;
 import "dart:async";
 
-import 'package:logging/logging.dart';
 import 'package:console_log_handler/console_log_handler.dart';
 
-import 'package:mdl/mdl.dart';
+import 'package:m4d_core/m4d_ioc.dart' as ioc;
+import 'package:m4d_components/m4d_components.dart';
 
 import 'package:prettify/prettify.dart';
 
 Future main() async {
-    html.querySelector("body").classes.add("update-theme");
+    dom.querySelector("body").classes.add("update-theme");
     configLogging();
 
     scrollChecker();
     enableTheme();
     prettyPrint();
 
-    registerMdl();
-    await componentFactory().run();
-    html.querySelector("body").classes.remove("update-theme");
+    // Initialize M4D
+    ioc.IOCContainer.bindModules([
+        CoreComponentsModule()
+    ]);
+
+    final MaterialApplication app = await componentHandler().upgrade();
+    
+    dom.querySelector("body").classes.remove("update-theme");
+    app.run();
 }
 
 void configLogging() {
@@ -31,9 +39,9 @@ void configLogging() {
 }
 
 void enableTheme() {
-    final Uri uri = Uri.parse(html.document.baseUri.toString());
+    final Uri uri = Uri.parse(dom.document.baseUri.toString());
     if(uri.queryParameters.containsKey("theme")) {
-        final html.LinkElement link = new html.LinkElement();
+        final dom.LinkElement link = new dom.LinkElement();
         link.rel = "stylesheet";
         link.id = "theme";
 
@@ -51,11 +59,11 @@ void enableTheme() {
         }
 
         if(isThemeOK) {
-            final html.LinkElement defaultTheme = html.querySelector("#theme");
+            final dom.LinkElement defaultTheme = dom.querySelector("#theme");
             if(defaultTheme != null) {
                 defaultTheme.replaceWith(link);
 
-                html.querySelector("#themename").text = theme;
+                dom.querySelector("#themename").text = theme;
             }
 
         }
@@ -63,10 +71,10 @@ void enableTheme() {
 }
 
 void scrollChecker() {
-    final html.HtmlElement body = html.querySelector("body");
-    final html.HtmlElement content = html.querySelector(".mdl-layout__content");
-    final html.HtmlElement shadow = html.querySelector(".addscrollshadow");
-    final html.ButtonElement button = html.querySelector("#totop");
+    final dom.HtmlElement body = dom.querySelector("body");
+    final dom.HtmlElement content = dom.querySelector(".mdl-layout__content");
+    final dom.HtmlElement shadow = dom.querySelector(".addscrollshadow");
+    final dom.ButtonElement button = dom.querySelector("#totop");
 
     if(content == null || shadow == null || button == null) {
         return;
@@ -76,7 +84,7 @@ void scrollChecker() {
         content.scrollTop = 0;
     });
 
-    content.onScroll.listen((final html.Event event) {
+    content.onScroll.listen((final dom.Event event) {
         final int top = content.scrollTop;
 
         if(top > 25) {

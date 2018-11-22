@@ -1,0 +1,15 @@
+# Rsync-Destination für dieses sample
+#
+#   - ssh ls2
+#   - cat ~/website/config/nginx/_template.conf.txt | sed -e 's/%example%/prettifier/' > ~/website/config/nginx/prettifier.conf
+#   - cat ~/website/config/nginx/prettifier.conf
+#   - sudo mkdir -p ~/website/data/example/prettifier
+#   - sudo chown ubuntu:ubuntu ~/website/data/example/prettifier
+#   - sudo chmod 775 ~/website/data/example/prettifier
+#   - echo 'prettifier' > ~/website/data/example/prettifier/index.html
+#   - ls -lad ~/website/data/example/prettifier
+#   - cd ~/website && docker-compose restart
+#
+RSYNC_DESTINATION=":~/website/data/example/prettifier/"
+EXAMPLE_URL="http://prettifier.example.mikemitterer.at/"
+

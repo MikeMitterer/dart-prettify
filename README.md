@@ -12,7 +12,7 @@ Please file feature requests and bugs at the [issue tracker][tracker].
 
 ### License
 
-    Copyright 2017 Michael Mitterer (office@mikemitterer.at),
+    Copyright 2018 Michael Mitterer (office@mikemitterer.at),
     IT-Consulting and Development Limited, Austrian Branch
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,5 +32,5 @@ or **star** this repo here on [GitHub][github]
 
 [tracker]: https://github.com/MikeMitterer/dart-prettify/issues
 [google-code]: https://code.google.com/p/google-code-prettify/
-[usage]: http://prettify.mikemitterer.at/usage/
+[usage]: http://prettifier.example.mikemitterer.at
 [github]: https://github.com/MikeMitterer/dart-prettify

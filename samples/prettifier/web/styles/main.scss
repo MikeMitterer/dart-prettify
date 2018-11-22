@@ -1,0 +1,75 @@
+@import "assets/styles/material-design-lite";
+
+html, body {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #F4F4F4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mdl-layout__content {
+    padding: 0;
+
+    section {
+        padding: 24px;
+
+        //&:first-child {
+        //    padding-top: 40px;
+        //}
+    }
+
+    h3 ~ h4 {
+        padding-top: 20px;
+    }
+}
+
+.cols {
+    margin-top: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 0;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.back-to-top {
+    position: fixed; bottom: 500px; right: -100px; transition: all 0.3s ease-out; opacity: 0;
+    z-index: 99;
+}
+.add-back-to-top-button .back-to-top {
+    bottom: 15px; right: 15px;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+@media screen and (max-width: $layout-screen-size-threshold) {
+
+    .back-to-top {
+        left: auto;
+        right: -100px;
+    }
+    .add-back-to-top-button .back-to-top {
+        left: auto;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+

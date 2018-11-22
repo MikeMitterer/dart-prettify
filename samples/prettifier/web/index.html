@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prettify - Sample</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link id="theme" rel="stylesheet" href="packages/prettify/styles/sons-of-obsidian.css">
+    <script type="text/javascript" src="packages/prettify/js/prettify.js"></script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="shortcut icon" href="assets/icons/favicon.ico"/>
+    <style>
+        .update-theme .mdl-layout__content {
+            display : none;
+        }
+    </style>
+</head>
+
+<body class="update-theme">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout__header addscrollshadow">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Dart code prettifier</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=desert">Desert</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=doxy">Doxy</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=light">Light</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=sons-of-obsidian">Obsidian</a>
+                <a class="mdl-navigation__link hide-on-mobile" href="?theme=sunburst">Sunburst</a>
+            </nav>
+        </div>
+    </div>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Dart code prettifier</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="?theme=desert">Desert</a>
+            <a class="mdl-navigation__link" href="?theme=doxy">Doxy</a>
+            <a class="mdl-navigation__link" href="?theme=light">Light</a>
+            <a class="mdl-navigation__link" href="?theme=sons-of-obsidian">Obsidian</a>
+            <a class="mdl-navigation__link" href="?theme=sunburst">Sunburst</a>
+        </nav>
+    </div>
+    <div class="mdl-layout__content" id="top">
+
+        <!-- section: steps -->
+        <section id="steps">
+            <header id="overview">
+                <h2>
+                    <strong id="themename">sons-of-obsidian</strong> Theme
+                    <small>for <a target="_blank" href="https://pub.dartlang.org/packages/prettify">Prettify</a></small>
+                </h2>
+                <p class="lead">Beautify the code snippets in your web page.</p>
+                <p>The code for this Dart-Package ist hosted on
+                    <a href="https://github.com/MikeMitterer/dart-prettify" target="_blank">GitHub</a>
+                </p>
+
+            </header>
+
+            <h3>A step-by-step guide to beautify your code</h3>
+
+            <!-- step 1 -->
+            <h4>
+                <small>1/</small>
+                Add prettify to you pubspec.yaml
+            </h4>
+
+<pre class="prettyprint linenums lang-yaml">
+name: 'myapp'
+version: 0.0.1
+description: An absolute bare-bones web app.
+#author: &lt;your name&gt; &lt;email@example.com&gt;
+#homepage: https://www.example.com
+
+     environment:
+     sdk: '&gt;=1.0.0 &lt;2.0.0'
+
+     dependencies:
+     browser: any
+
+     prettify: any
+
+</pre>
+            <!-- step 2 -->
+            <h4>
+                <small>2/</small>
+                Install it
+            </h4>
+            <p>You can install packages from the command line:</p>
+<pre class="prettyprint">
+
+    $ pub get
+
+
+</pre>
+
+            <!-- step 3 -->
+            <h4>
+                <small>3/</small>
+                Insert CSS and JS Files
+            </h4>
+
+<pre class="prettyprint linenums lang-html">
+
+&lt;head&gt;
+    &lt;!-- light.css is one of the available themes --&gt;
+    &lt;link id=&quot;theme&quot; rel=&quot;stylesheet&quot; href=&quot;packages/prettify/styles/light.css&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;packages/prettify/js/prettify.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+</pre>
+
+            <!-- step 4 -->
+            <h4>
+                <small>4/</small>
+                Insert Code Snippets
+            </h4>
+            <p>Put the code segments in <code>&lt;pre class="prettyprint"&gt; ...code segments...
+                &lt;/pre&gt;</code> or<br>
+                <code>&lt;code class="prettyprint"&gt; ...code segments... &lt;/code&gt</code>
+                and it will be pretty printed.</p>
+
+            <p>Replace special characters with HTML Entities<br>
+                You can find one of these tools here on <a href="http://www.htmlescape.net/htmlescape_tool.html"
+                                                           target="_blank">http://www.htmlescape.net/</a></p>
+
+<pre class="prettyprint linenums">
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Demo | Prettify&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;h2&amp;gt;Hello, World!&amp;lt;/h2&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+
+</pre>
+            <div>All the code segments inside <code>&lt;pre&gt;</code> are encoded.</div>
+
+            <!-- step 5 -->
+            <h4>
+                <small>5/</small>
+                Kickstart prettify.dart
+            </h4>
+
+<pre class="prettyprint linenums lang-dart">
+
+import 'package:prettify/prettify.dart';
+
+void main() {
+    prettyPrint();
+}
+
+</pre>
+
+            <!-- step 6 -->
+            <h4>
+                <small>6/</small>
+                That's All. Here's an Example
+            </h4>
+            <div class="cols">
+                <div>
+                    <div>BEFORE PRETTIFY</div>
+  <pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Demo | Prettify.DART&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Hello, World!&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+                </div>
+                <div>
+                    <div>AFTER PRETTIFY</div>
+<pre class="prettyprint linenums">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Demo | Prettify.DART&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Hello, World!&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+                </div>
+            </div>
+
+
+            <!-- step 7 -->
+            <h4>
+                <small>7/</small>
+                Wait! Make It More Prettier
+            </h4>
+            <p>You can add your own stylesheet file, e.g. <code>prettify-[YOUR THEME].css</code> to
+                make the code more prettier.</p>
+
+<pre class="prettyprint linenums lang-html">
+
+&lt;head&gt;
+    &lt;link id=&quot;theme&quot; rel=&quot;stylesheet&quot; href=&quot;path/to/prettify-[YOUR THEME].css&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;packages/prettify/js/prettify.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+</pre>
+            <p>"prettify" provides you with some predefined styles:
+            <ul>
+                <li>packages/prettify/styles/<strong>light.css</strong></li>
+                <li>packages/prettify/styles/<strong>desert.css</strong></li>
+                <li>packages/prettify/styles/<strong>doxy.css</strong></li>
+                <li>packages/prettify/styles/<strong>sons-of-obsidian.css</strong></li>
+                <li>packages/prettify/styles/<strong>sunburst.css</strong></li>
+            </ul>
+            </p>
+        </section>
+
+        <!-- section: Examples -->
+        <section id="examples">
+            <h3>beautify your code in different languages</h3>
+
+            <p>You can beautify your code segment in different languages by inserting
+                <code>lang-[language]</code> class. Here's an example of <code>lang-html</code>.
+            </p>
+
+
+            <div class="cols">
+                <div>
+                    <div class="label">THE MARKUP</div>
+<pre class="prettyprint linenums">
+
+&lt;pre class=&quot;prettyprint linenums lang-html&quot;&gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Demo | Prettify.DART&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;h2&amp;gt;Hello, World!&amp;lt;/h2&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+
+</pre>
+                </div>
+                <div>
+                    <div class="label">PRETTIFY FOR SPECIFIC LANGUAGE</div>
+<pre class="prettyprint linenums lang-html">
+
+<br>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Demo | Prettify.DART&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Hello, World!&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+<br>
+
+</pre>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <ul class="mdl-list--inline">
+                    <li>
+                        <a href="#bash">Bash</a>
+                    </li>
+                    <li>
+                        <a href="#c">C</a>
+                    </li>
+                    <li>
+                        <a href="#cc">C++</a>
+                    </li>
+                    <li>
+                        <a href="#coffee">CoffeeScript</a>
+                    </li>
+                    <li>
+                        <a href="#css">CSS</a>
+                    </li>
+                    <li>
+                        <a href="#dart">Dart</a>
+                    </li>
+                    <li>
+                        <a href="#html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#java">Java</a>
+                    </li>
+                    <li>
+                        <a href="#js">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="#perl">Perl</a>
+                    </li>
+                    <li>
+                        <a href="#php">PHP</a>
+                    </li>
+                    <li>
+                        <a href="#py">Python</a>
+                    </li>
+                    <li>
+                        <a href="#sql">SQL</a>
+                    </li>
+                    <li>
+                        <a href="#xhtml">XHTML</a>
+                    </li>
+                    <li>
+                        <a href="#xml">XML</a>
+                    </li>
+                    <li>
+                        <a href="#xsl">XSL</a>
+                    </li>
+                    <li>
+                        <a href="#yaml">YAML</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="span12"></div>
+            </div>
+            <div class="row code-language" id="bash">
+                <div class="span12">
+                    <h4>
+                        <small>1/</small>
+                        Bash
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>Bash</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-bash">#!/bin/bash
+
+# Fibonacci numbers
+# Writes an infinite series to stdout, one entry per line
+function fib() {
+  local a=1
+  local b=1
+  while true ; do
+    echo $a
+    local tmp=$a
+    a=$(( $a + $b ))
+    b=$tmp
+  done
+}
+
+# output the 10th element of the series and halt
+fib | head -10 | tail -1</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="c">
+                <div class="span12">
+                    <h4>
+                        <small>2/</small>
+                        C
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>C</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-c">#include &lt;stdio.h&gt;
+
+/* the nth fibonacci number. */
+uint32 fib(unsigned int n) {
+  uint32 a = 1, b = 1;
+  uint32 tmp;
+  while (--n &gt;= 0) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+  return a;
+}
+
+void main() {
+  size_t size = sizeof(wchar_t);
+  ASSERT_EQ(size, 1);
+  printf(&quot;%u&quot;, fib(10));
+}
+
+#define ZERO 0 /* a
+  multiline comment */</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="cc">
+                <div class="span12">
+                    <h4>
+                        <small>3/</small>
+                        C++
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>C++</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-cc">#include &lt;iostream&gt;
+
+using namespace std;
+
+//! fibonacci numbers with gratuitous use of templates.
+//! \param n an index into the fibonacci series
+//! \param fib0 element 0 of the series
+//! \return the nth element of the fibonacci series
+template &lt;class T&gt;
+T fib(int n, const T&amp; fib0) {
+  T a(fib0), b(fib0);
+  while (--n &gt;= 0) {
+    T tmp(a);
+    a += b;
+    b = tmp;
+  }
+  return a;
+}
+
+int main(int argc, char **argv) {
+  cout &lt;&lt; fib(10, 1U);</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="coffee">
+                <div class="span12">
+                    <h4>
+                        <small>4/</small>
+                        CoffeeScript
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>CoffeeScript</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-coffee">class Animal
+  constructor: (@name) -&gt;
+  move: (meters, loc) -&gt;
+    alert @name + &quot; moved &quot; + meters + &quot;m.&quot;
+  travel: (path...) -&gt;
+    for place in path
+      @move place.distance, place.location
+
+class Horse extends Animal
+  ###
+  @param name Horse name
+  @param jumper Jumping ability
+  ###
+  constructor: (name, jumper) -&gt;
+    super name
+    @capable = jumper
+  step: -&gt;
+    alert '''
+          Step,
+          step...
+          '''
+  jump: -&gt;
+    @capable
+  move: (meters, where) -&gt;
+    switch where
+      when &quot;ground&quot;
+        @step()
+        super meters
+      when &quot;hurdle&quot;
+        super meters if @jump()
+
+# Create horse
+tom = new Horse &quot;Tommy&quot;, yes
+
+street =
+  location: &quot;ground&quot;
+  distance: 12
+car =
+  location: &quot;hurdle&quot;
+  distance: 2
+
+###
+Tell him to travel:
+1. through the street
+2. over the car
+###
+tom.travel street, car</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="css">
+                <div class="span12">
+                    <h4>
+                        <small>5/</small>
+                        CSS
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>CSS</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-css">body {
+  margin: 0;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="dart">
+                <div class="span12">
+                    <h4>
+                        <small>6/</small>
+                        Dart
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>CSS</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-dart">import 'dart:html' as html;
+
+import 'package:logging/logging.dart';
+import 'package:console_log_handler/console_log_handler.dart';
+
+import 'package:wsk_material/wskcomponets.dart';
+
+import 'package:prettify/prettify.dart';
+
+void main() {
+    html.querySelector("body").classes.add("update-theme");
+    configLogging();
+
+    enableTheme();
+    prettyPrint();
+
+    registerAllWskComponents();
+    upgradeAllRegistered();
+    html.querySelector("body").classes.remove("update-theme");
+}
+</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="html">
+                <div class="span12">
+                    <h4>
+                        <small>7/</small>
+                        HTML
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>HTML</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-html">&lt;!doctype html&gt;
+
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+
+ &lt;title&gt;HTML5 Template&lt;/title&gt;
+ &lt;meta name="description" content="HTML5 Template"&gt;
+ &lt;meta name="author" content="MikeMitterer"&gt;
+
+ &lt;link rel="stylesheet" href="css/styles.css?v=1.0"&gt;
+
+ &lt;!--[if lt IE 9]&gt;
+ &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+ &lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+ &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="java">
+                <div class="span12">
+                    <h4>
+                        <small>8/</small>
+                        Java
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>Java</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-java">package foo;
+
+import java.util.Iterator;
+
+/**
+ * the fibonacci series implemented as an Iterable.
+ */
+public final class Fibonacci implements Iterable&lt;Integer&gt; {
+  /** the next and previous members of the series. */
+  private int a = 1, b = 1;
+
+  @Override
+  public Iterator&lt;Integer&gt; iterator() {
+    return new Iterator&lt;Integer&gt;() {
+      /** the series is infinite. */
+      public boolean hasNext() { return true; }
+      public Integer next() {
+        int tmp = a;
+        a += b;
+        b = tmp;
+        return a;
+      }
+      public void remove() { throw new UnsupportedOperationException(); }
+    };
+  }
+
+  /**
+   * the n&lt;sup&gt;th&lt;/sup&gt; element of the given series.
+   * @throws NoSuchElementException if there are less than n elements in the
+   *   given Iterable's {@link Iterable#iterator iterator}.
+   */
+  public static &lt;T&gt;
+  T nth(int n, Iterable&lt;T&gt; iterable) {
+    Iterator&lt;? extends T&gt; it = iterable.iterator();
+    while (--n &gt; 0) {
+      it.next();
+    }
+    return it.next();
+  }
+
+  public static void main(String[] args) {
+    System.out.print(nth(10, new Fibonacci()));
+  }
+}</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="js">
+                <div class="span12">
+                    <h4>
+                        <small>9/</small>
+                        JavaScript
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>JavaScript</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-js">/**
+ * nth element in the fibonacci series.
+ * @param n &gt;= 0
+ * @return the nth element, &gt;= 0.
+ */
+function fib(n) {
+  var a = 1, b = 1;
+  var tmp;
+  while (--n &gt;= 0) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+  return a;
+}
+
+document.write(fib(10));</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="perl">
+                <div class="span12">
+                    <h4>
+                        <small>10/</small>
+                        Perl
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>Perl</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-perl">#!/usr/bin/perl
+
+use strict;
+use integer;
+
+# the nth element of the fibonacci series
+# param n - an int &gt;= 0
+# return an int &gt;= 0
+sub fib($) {
+  my $n = shift, $a = 1, $b = 1;
+  ($a, $b) = ($a + $b, $a) until (--$n &lt; 0);
+  return $a;
+}
+
+print fib(10);</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="php">
+                <div class="span12">
+                    <h4>
+                        <small>11/</small>
+                        PHP
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>PHP</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-php">&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&lt;?= 'Fibonacci numbers' ?&gt;&lt;/title&gt;
+
+    &lt;?php
+      // PHP has a plethora of comment types
+      /* What is a
+         &quot;plethora&quot;? */
+      function fib($n) {
+        # I don't know.
+        $a = 1;
+        $b = 1;
+        while (--$n &gt;= 0) {
+          echo &quot;$a\n&quot;;
+          $tmp = $a;
+          $a += $b;
+          $b = $tmp;
+        }
+      }
+    ?&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;?= fib(10) ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="py">
+                <div class="span12">
+                    <h4>
+                        <small>12/</small>
+                        Python
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>Python</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-py">#!/usr/bin/python2.4
+
+def fib():
+  '''
+  a generator that produces the fibonacci series's elements
+  '''
+
+  a = 1
+  b = 1
+  while True:
+    a, b = a + b, a
+    yield a
+
+def nth(series, n):
+  '''
+  returns the nth element of a series,
+  consuming the series' earlier elements.
+  '''
+
+  for x in series:
+    n -= 1
+    if n &lt;= 0: return x
+
+print nth(fib(), 10)
+
+/* not a comment and not keywords: null char true */</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="sql">
+                <div class="span12">
+                    <h4>
+                        <small>13/</small>
+                        SQL
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>SQL</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-sql">/* A multi-line
+ * comment */
+'Another string /* Isn\'t a comment',
+&quot;A string */&quot;
+-- A line comment
+SELECT * FROM users WHERE id IN (1, 2.0, +30e-1);
+-- keywords are case-insensitive.
+-- Note: user-table is a single identifier, not a pair of keywords
+select * from user-table where id in (x, y, z);</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="xhtml">
+                <div class="span12">
+                    <h4>
+                        <small>14/</small>
+                        XHTML
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>XHTML</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-xhtml">&lt;xhtml&gt;
+  &lt;head&gt;
+    &lt;title&gt;Fibonacci number&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;alert(fib(10))&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;&lt;![CDATA[
+function fib(n) {
+  var a = 1, b = 1;
+  var tmp;
+  while (--n &gt;= 0) {
+    tmp = a;
+    a += b;
+    b = tmp;
+  }
+  return a;
+}
+]]&gt;
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/xhtml&gt;</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="xml">
+                <div class="span12">
+                    <h4>
+                        <small>15/</small>
+                        XML
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>XML</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-xml">&lt;!DOCTYPE series PUBLIC &quot;fibonacci numbers&quot;&gt;
+
+&lt;series.root base=&quot;1&quot; step=&quot;s(n-2) + s(n-1)&quot;&gt;
+  &lt;element i=&quot;0&quot;&gt;1&lt;/element&gt;
+  &lt;element i=&quot;1&quot;&gt;1&lt;/element&gt;
+  &lt;element i=&quot;2&quot;&gt;2&lt;/element&gt;
+  &lt;element i=&quot;3&quot;&gt;3&lt;/element&gt;
+  &lt;element i=&quot;4&quot;&gt;5&lt;/element&gt;
+  &lt;element i=&quot;5&quot;&gt;8&lt;/element&gt;
+  ...
+&lt;/series.root&gt;</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row code-language" id="xsl">
+                <div class="span12">
+                    <h4>
+                        <small>16/</small>
+                        XSL
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>XSL</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-xsl">&lt;!-- Test elements and attributes with namespaces --&gt;
+
+&lt;xsl:stylesheet xml:lang=&quot;en&quot;&gt;
+  &lt;xsl:template match=&quot;.&quot;&gt;
+    &lt;xsl:text&gt;Hello World&lt;/xsl:text&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row code-language" id="yaml">
+                <div class="span12">
+                    <h4>
+                        <small>17/</small>
+                        YAML
+                    </h4>
+                    <div class="code-wrapper">
+                        <figure class="code">
+                            <figcaption>
+                                <span>XSL</span>
+                            </figcaption>
+<pre class="prettyprint linenums lang-yaml">
+name: 'myapp'
+version: 0.0.1
+description: An absolute bare-bones web app.
+#author: &lt;your name&gt; &lt;email@example.com&gt;
+#homepage: https://www.example.com
+
+     environment:
+     sdk: '&gt;=1.0.0 &lt;2.0.0'
+
+     dependencies:
+     browser: any
+
+     prettify: any
+
+</pre>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            For this page I've used <a href="https://pub.dartlang.org/packages/wsk_material" target="_blank">Web Starter Kit - Material style for Dart</a><br>
+        </section>
+
+        <section>
+            <a href="http://demo.stanleyhlng.com/prettify-js" target="_blank">Stanley</a> provided me with some samples and I took some of his "howto's" for this page - Thanks!
+        </section>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer--left-section">
+            <div class="mdl-logo">
+               <strong>Prettify DART</strong>
+            </div>
+            <ul class="mdl-mini-footer--link-list">
+                <li><a href="https://code.google.com/p/google-code-prettify/source/browse/trunk/src" target="_blank">Languages available</a></li>
+                <li><a href="https://code.google.com/p/google-code-prettify/source/browse/trunk/styles/" target="_blank">Original styles</a></li>
+            </ul>
+        </div>
+        <div class="mdl-mini-footer--right-section">
+            <ul class="mdl-mini-footer--link-list">
+                <li><a href="http://www.mikemitterer.at">www.MikeMitterer.at</a></li>
+            </ul>
+
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+            <!--<button class="mdl-mini-footer&#45;&#45;social-btn"></button>-->
+        </div>
+    </footer>
+    </div>
+</div>
+<div class="back-to-top">
+    <button id="totop" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="fa fa-angle-up"></i>
+    </button></div>
+</div>
+
+<!--<footer>-->
+<!--I took some samples and some descriptions from <a href="http://demo.stanleyhlng.com/prettify-js">http://demo.stanleyhlng.com/prettify-js</a>-->
+<!--</footer>-->
+
+
+<script defer src="main.dart.js"></script>
+
+</body>
+
+</html>
