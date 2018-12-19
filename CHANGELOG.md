@@ -6,6 +6,11 @@ Beautify the code snippets in your web page
 ### Feature
 * Sample works now with Material4Dart [4ef4dc3](https://github.com/mikemitterer/dart-prettify/commit/4ef4dc3f496fcc471217c584a4ac67669a3a2c1f)
 
+### Bugs
+* Sample used IOCContainer instead of Container [4623a80](https://github.com/mikemitterer/dart-prettify/commit/4623a805fa362afe686ff8ac669c6894389ea7da)
+* Sample had no dependency to sass_builder [29c32bb](https://github.com/mikemitterer/dart-prettify/commit/29c32bb7816628e20ae874ca99f62669b5c5416e)
+* Jenkins build-script had wrong path to sample [070d8a5](https://github.com/mikemitterer/dart-prettify/commit/070d8a53495e49d29a93c20aae761255143b5871)
+
 ### Docs
 * Sample uses latest MDL-Version [02e4bf5](https://github.com/mikemitterer/dart-prettify/commit/02e4bf555367c7ae172416c918696225c438bc25)
 

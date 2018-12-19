@@ -1,6 +1,6 @@
 name: prettify
 description: Beautify the code snippets in your web page
-version: 0.3.9
+version: 0.3.14
 author: Mike Mitterer <office@mikemitterer.at>
 homepage: https://github.com/MikeMitterer/dart-prettify
 
