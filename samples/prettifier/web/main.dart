@@ -19,7 +19,7 @@ Future main() async {
     prettyPrint();
 
     // Initialize M4D
-    ioc.IOCContainer.bindModules([
+    ioc.Container.bindModules([
         CoreComponentsModule()
     ]);
 
